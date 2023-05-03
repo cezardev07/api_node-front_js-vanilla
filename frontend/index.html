@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>front end</title>
+    <link rel="shortcut icon" href="assets/img-perfil.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./assets/img-perfil.jpg" alt="">
+        <button class="open_created_post">Create post</button>
+    </header>
+    <div class="created-post close">
+        <div class="pop-pup">
+            <input type="text" placeholder="create your post...">
+            <button class="close_pop">Cancelar</button>
+        </div>
+    </div>
+    <main>
+        
+        <!-- 
+                <article>
+                    <div class="header-perfil">
+                        <div class="perfil">
+                            <img src="./assets/img-perfil.jpg" alt="">
+                            <p>first name</p>
+                        </div>
+                        <div class="btn">
+                            <button>apagar post</button>
+                        </div>
+                    </div>
+                    <div class="commit-post">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero optio hic sequi voluptate voluptatibus? Maxime soluta tempore laboriosam optio iste dignissimos! Distinctio molestias similique dolore optio! Dicta, id fugiat.</p>
+                    </div>
+                </article>  
+        -->
+       
+
+    </main>
+    <script type="module">
+        import { app } from "./js/app.js";
+
+        const open_created_post = document.querySelector(".open_created_post")
+        const close_pop = document.querySelector(".close_pop")
+        const main = document.querySelector("main")
+        const input = document.querySelector("input")
+        const created_post = document.querySelector(".created-post")
+
+        open_created_post.onclick = () => {
+            created_post.classList.remove("close")
+        }
+
+        close_pop.onclick = () => {
+            created_post.classList.add("close")
+        }
+        app()
+
+    </script>
+</body>
+</html>
