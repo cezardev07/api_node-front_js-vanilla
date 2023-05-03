@@ -6,13 +6,15 @@
 
 ### - DEPENDENCIAS
 open -> cd backend
-
+    
+    npm install
+    
     npm install express
 
     npm install cors
 
     npm install nodemon
-
+    
     npm install uuidv4
 
 
